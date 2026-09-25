@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #313131;
+    color: #00ff88;
+    overflow-x: hidden;
+    font-family: "Roboto Mono", monospace;
+}
+
+.material-symbols-outlined {
+    font-size: 150px;
+    color: #00ff88;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .container-input {
+    width: min(100%, 500px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:50px;
+    padding-right:50px;
+    border-radius:40px;
+    background-color:rgb(59, 59, 59);
+}
+
+main .container-input h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+main .container-input span {
+    color: #00ff88;
+}
+
+main .container-input .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-width: 500px;
+    height: 18px;
+    border-radius: 15px;
+    background-color: #000000;
+    outline: none;
+    opacity: 0.7;
+    margin: 10px 0;
+}
+
+.container-input .button-cta {
+    height: 35px;
+    width: 150px;
+    background-color: #00ff88;
+    border: 0;
+    border-radius: 4px;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-password {
+    width: 100%;
+    max-width: 700px;
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.password {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.40);
+    border: 1px solid #313131;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    transition: transform 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.02);
+    border-color: #00ff88;
+}
+
+.hide {
+    display: none;
+}
+
+.tooltip {
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+
+.container-password:hover .tooltip {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main .container-input {
+        width: 100%;
+    }
+
+    main .container-input h2 {
+        font-size: 15px;
+    }
+
+    main .container-input p {
+        font-size:15px;
+    }
+
+    main .container-input .slider {
+        width: 100%;
+        height: 16px;
+        margin: 15px 0;
+    }
+
+    .container-input .button-cta {
+        width: 100px;
+        height: 38px;
+    }
+
+    .container-password {
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .title {
+        font-size: 13px;
+    }
+
+    .password {
+        width: 100%;
+        padding: 12px;
+        font-size: 17px;
+    }
+
+    .tooltip {
+        font-size: 14px;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    main .container-input h2 {
+        font-size: 13px;
+    }
+
+    main {
+        padding:7px;
+    }
+
+    main .container-input {
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:10px;
+        padding-right:10px;
+        text-align:center;
+    }  
+
+    .password {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
