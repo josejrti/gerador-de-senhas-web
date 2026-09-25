@@ -149,6 +149,7 @@ footer {
 
 footer p {
     text-align: center;
+    font-size:14px;
 }
 
 @media (max-width: 600px) {
